@@ -1,0 +1,50 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: Helvetica;
+  }
+  .principal h2{
+    font-size: Helvetica;
+  }
+  .principal img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 14px;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+   
+    position: relative;
+  }
+  
+  .principal a {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .principal a::after {
+    content: '\f35d'; 
+    font-family: 'Font Awesome 6 Free'; 
+    font-weight: 999; 
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+  .principal a:hover img {
+    filter: blur(5px);
+   
+  }
+  
+  .principal a:hover::after {
+    opacity: 1;
+  }
+  
+  

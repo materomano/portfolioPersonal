@@ -1,0 +1,37 @@
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 10px;
+  font-family: Helvetica;
+  border-radius: 25px;
+  color: white;
+}
+
+.principal:hover {
+  background-color: rgba(0, 0, 255, 0.568);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container h1 {
+  font-size: 80px;
+  font-family: Helvetica;
+  margin: 0;
+}
+
+.text-container h3 {
+  font-size: 20px;
+  font-family: Helvetica;
+  margin: 0;
+}
+
+.foto img {
+  width: 400px; 
+  height: auto; 
+  border-radius: 10px; 
+}
