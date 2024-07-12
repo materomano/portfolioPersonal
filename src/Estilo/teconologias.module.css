@@ -1,0 +1,111 @@
+.principal{
+   
+    border-radius: 25px;
+    margin-top: 30px;
+}
+.principal h1{
+    color:white;
+    text-align: center;
+    font-family: Helvetica;
+}
+.back, .front {
+    color: white;
+    text-align: center;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back h2, .front h2 {
+    font-size: 25px;
+    font-family: Helvetica;
+}
+
+.icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    width: 50%;
+    margin: 0 auto; 
+    font-size: 12px;
+}
+
+.icono div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px; 
+    transition: background-color 0.2s ease, transform 0.2s ease; 
+}
+
+.front div:hover,
+.back div:hover {
+    border-radius: 15px;
+    background-color: rgb(116, 92, 126); 
+}
+
+.icono div:hover {
+    transform: scale(1.1);
+}
+
+.icono i {
+    font-size: 3em; 
+    margin: 0 10px; 
+    transition: transform 0.3s ease; 
+}
+
+.icono img {
+    width: 3em;
+    transition: transform 0.3s ease; 
+}
+
+.icono svg {
+    font-size: 3em;
+    transition: transform 0.3s ease; 
+}
+
+.icono h5{
+    font-size: 15px;
+    font-family: Helvetica;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .principal {
+        display: flex;
+        flex-direction: column;
+    }
+    .principal h1{
+        color:white;
+        text-align: center;
+        font-family: Helvetica;
+        flex-direction: column;
+    }
+    .back, .front {
+     display: flex;
+        flex-direction: column;
+       ;
+       
+    }
+    .icono {
+       display: flex;
+       
+        width: 80%;
+        
+    }
+    .front div:hover,
+    .back div:hover {
+    border-radius: 15px;
+    background-color:transparent; 
+}
+
+}
