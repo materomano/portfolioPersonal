@@ -1,4 +1,5 @@
 import React from 'react';
+import proyecto from "../assets/images/proyecto.png"
 import { principal } from '../Estilo/proyectos.module.css';
 
 const Proyectos = () => {
@@ -12,7 +13,7 @@ const Proyectos = () => {
     <div className={principal}>
       <h2>Car Rental</h2>
       <a href="" onClick={handleClick}>
-        <img src="proyecto.png" alt="Proyecto" />
+        <img src={proyecto} alt="Proyecto" />
         
       </a>
       

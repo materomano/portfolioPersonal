@@ -1,4 +1,5 @@
 import React from 'react'
+import diploma from "../assets/images/DIPLOMA.png"
 import {principal, foto} from '../Estilo/estudios.module.css'
 const Estudios = () => {
   return (
@@ -11,7 +12,7 @@ const Estudios = () => {
         </div>
        
         <div className={foto}>
-          <img src="DIPLOMA.png" alt="imagen" />
+          <img src={diploma} alt="imagen" />
         </div>
        
 

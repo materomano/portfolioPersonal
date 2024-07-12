@@ -1,10 +1,11 @@
 import React from 'react'
+import fotomia from "../assets/images/fotomateo.png"
 import {principal, main} from "../Estilo/mateo.module.css"
 const Sobremi = () => {
   return (
     <div className={principal}>
         <div className={main}>
-            <img src="fotomateo.png" alt="" />
+            <img src={fotomia} alt="" />
             <p>
                 Hola soy Mateo Romano tengo 20 años y soy estudiante de programación. Tengo un gran interés por la tecnología y la informática, lo que me llevó a profundizar en el mundo de la programación.
 
