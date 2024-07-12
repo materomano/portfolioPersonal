@@ -12,7 +12,7 @@ const Proyectos = () => {
     <div className={principal}>
       <h2>Car Rental</h2>
       <a href="" onClick={handleClick}>
-        <img src="/images/proyecto.png" alt="Proyecto" />
+        <img src="proyecto.png" alt="Proyecto" />
         
       </a>
       

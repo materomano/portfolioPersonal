@@ -11,7 +11,7 @@ const Estudios = () => {
         </div>
        
         <div className={foto}>
-          <img src="/images/DIPLOMA.png" alt="imagen" />
+          <img src="DIPLOMA.png" alt="imagen" />
         </div>
        
 

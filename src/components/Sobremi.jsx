@@ -4,7 +4,7 @@ const Sobremi = () => {
   return (
     <div className={principal}>
         <div className={main}>
-            <img src="/images/fotomateo.png" alt="" />
+            <img src="fotomateo.png" alt="" />
             <p>
                 Hola soy Mateo Romano tengo 20 años y soy estudiante de programación. Tengo un gran interés por la tecnología y la informática, lo que me llevó a profundizar en el mundo de la programación.
 
