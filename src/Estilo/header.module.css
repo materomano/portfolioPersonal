@@ -26,3 +26,19 @@
 }
 
 
+@media (max-width: 600px) {
+    .encabezado {
+       
+        width: 100%;
+        display: flex;
+       
+    }
+    .encabezado a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        font-family: Helvetica;
+        text-align: center;
+        padding: 25px;
+    }
+  }

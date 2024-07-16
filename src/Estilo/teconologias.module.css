@@ -11,14 +11,14 @@
 .back, .front {
     color: white;
     text-align: center;
-  
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.back h2, .front h2 {
+.back h2 , .front h2 {
     font-size: 25px;
     font-family: Helvetica;
 }
@@ -77,35 +77,36 @@
 
 
 
-
-
-@media screen and (max-width: 750px) {
-    .principal {
+@media (max-width: 600px) {
+    .principal{
         display: flex;
-        flex-direction: column;
     }
     .principal h1{
-        color:white;
-        text-align: center;
-        font-family: Helvetica;
-        flex-direction: column;
+        display: none;
     }
     .back, .front {
-     display: flex;
         flex-direction: column;
-       ;
-       
+        display: flex; 
+        justify-content: space-around;
+        width: 100%; 
     }
+   
     .icono {
-       display: flex;
-       
-        width: 80%;
-        
+        flex-direction: column; 
+        width: 100%; 
+        display: flex;
+        gap: 10px; 
+    }
+
+    .icono div {
+        width: 100%; 
+        flex-direction: row;
+        display: flex;
+        justify-content: center; 
     }
     .front div:hover,
     .back div:hover {
-    border-radius: 15px;
-    background-color:transparent; 
-}
-
+        border-radius: 15px;
+        background-color: transparent;
+    }
 }

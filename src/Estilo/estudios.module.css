@@ -19,30 +19,26 @@
 }
 
 .text-container h1 {
-  font-size: 80px;
+  font-size: 40px;
   font-family: Helvetica;
   margin: 0;
 }
 
 .text-container h3 {
-  font-size: 20px;
+  font-size: 10px;
   font-family: Helvetica;
   margin: 0;
 }
 
 .foto img {
-  width: 400px; 
+  width: 300px; 
   height: auto; 
   border-radius: 10px; 
 }
-@media screen and (max-width: 750px) {
-  .principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    
+@media (max-width: 600px) {
+  .principal{
+      flex-direction: column; 
+      width: 100%;
+      font-size: 14px;
   }
-
- 
 }

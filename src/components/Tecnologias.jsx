@@ -7,8 +7,9 @@ const Tecnologias = () => {
         <h1>Tecnologias</h1>
 
         <div className={front}>
-            <h2>FrontEnd</h2>
+          <h2>FrontEnd</h2>
             <div className={icono}>
+           
               <div>
                 <i class="fa-brands fa-react"></i>
                 <h5>React</h5>
@@ -31,7 +32,7 @@ const Tecnologias = () => {
         <div className={back}>
             <h2>BackEnd</h2>
               <div className={icono}>
-                
+               
                 <div>
                   <i class="fa-brands fa-java"></i>
                   <h5>Java</h5>
