@@ -1,19 +1,35 @@
 .principal {
   margin: 0;
   padding: 25px 10px;
-  background-color: rgb(80, 80, 83);
+  background-color: rgb(23, 43, 44);
   border-radius: 25px;
   margin-top: 30px;
+ 
+  height: auto;
+  
+  background-image: url('/mateeo/src/assets/images/fotomateo.png'); 
+  background-repeat: repeat;
 }
 
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 .main {
   display: flex;
-  width: 100%;
+  width: 90%;
   align-items: center;
 }
 
 .main img {
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 
@@ -25,10 +41,13 @@
   font-size: 25px;
 }
 
+
 @media (max-width: 600px) {
   .main {
       flex-direction: column;
       width: 100%;
+      height: auto;
      
   }
+
 }

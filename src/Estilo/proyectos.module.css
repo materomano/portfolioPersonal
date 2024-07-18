@@ -5,10 +5,11 @@
     justify-content: center;
     color: white;
     text-align: center;
-    font-size: Helvetica;
-  }
+}
   .principal h2{
-    font-size: Helvetica;
+    
+    font-family:Helvetica;
+   
   }
   .principal img {
     max-width: 70%;
