@@ -1,7 +1,7 @@
 .principal {
   margin: 0;
   padding: 25px 10px;
-  background-image: url('src/assets/images/fondo.jpg'); /* Ruta relativa al archivo CSS */
+  background-color: rgb(44, 43, 51);
   background-size: cover; /* Ajusta el tamaño del fondo para cubrir completamente el elemento */
   background-position: center; /* Centra la imagen de fondo */
   background-repeat: repeat; /* Evita que la imagen de fondo se repita */
@@ -35,7 +35,7 @@
 }
 p {
   
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 25px; /* Tamaño de fuente predeterminado */
   color: #ffffff; 
   padding: 40px;/* Color de texto predeterminado */
