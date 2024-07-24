@@ -8,9 +8,8 @@
   border-radius: 25px;
   margin-top: 30px;
   height: auto; 
-  font-family: Helvetica;/* Permite que la altura se ajuste automáticamente según el contenido */
+  font-family: Helvetica; /* Permite que la altura se ajuste automáticamente según el contenido */
 }
-
 
 .hidden {
   opacity: 0;
@@ -22,6 +21,7 @@
   opacity: 1;
   transform: translateY(0);
 }
+
 .main {
   display: flex;
   width: 90%;
@@ -32,14 +32,16 @@
 .main img {
   width: 250px;
   height: auto;
+  border-radius: 10px;
 }
+
 p {
-  
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 25px; /* Tamaño de fuente predeterminado */
   color: #ffffff; 
-  padding: 40px;/* Color de texto predeterminado */
+  padding: 40px; /* Color de texto predeterminado */
 }
+
 
 
 
