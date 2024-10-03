@@ -11,14 +11,14 @@
 .back, .front {
     color: white;
     text-align: center;
-  
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.back h2, .front h2 {
+.back h2 , .front h2 {
     font-size: 25px;
     font-family: Helvetica;
 }
@@ -45,7 +45,7 @@
 .front div:hover,
 .back div:hover {
     border-radius: 15px;
-    background-color: rgb(116, 92, 126); 
+    background-color: rgb(53, 53, 53); 
 }
 
 .icono div:hover {
@@ -74,12 +74,46 @@
 }
 
 
-@media (max-width:650px;){
-    .iconos{
-        flex-direction: column;
+
+
+@media (max-width: 600px) {
+    .principal {
+        display: flex;
+        flex-direction: column; /* Asegura que el h1 esté en la parte superior */
+        align-items: center;    /* Centra el h1 */
+    }
+
+    .principal h1 {
+        margin-bottom: 20px;  /* Añade espacio debajo del h1 */
+        text-align: center;    /* Asegura que el texto del h1 esté centrado */
+    }
+
+    .back, .front {
+        display: flex;         /* Permite que el contenido dentro de back y front esté en fila */
+      
+        justify-content: center; /* Centra el contenido en columna */
+        width: 100%;           /* Asegura que ocupen el ancho completo */
+        margin-bottom: 20px;   /* Espacio entre back y front */
+    }
+
+    .icono {
+      
+        width: 100%;           /* Asegura que ocupen el ancho completo */
+        display: flex;
+        gap: 10px;             /* Ajusta el espacio entre los íconos */
+    }
+
+    .icono div {
+        width: auto;           /* Ajusta el ancho de los divs */
+     
+        display: flex;
+        justify-content: center; /* Centra el contenido de cada div */
+    }
+
+    .front div:hover,
+    .back div:hover {
+        border-radius: 15px;
+        background-color: transparent; /* Evita el cambio de color al hacer hover en pantallas pequeñas */
     }
 }
-
-
-
 

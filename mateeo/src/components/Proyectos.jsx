@@ -1,4 +1,5 @@
 import React from 'react';
+import rental from '../assets/images/rental.jpg'
 import { principal } from '../Estilo/proyectos.module.css';
 
 const Proyectos = () => {
@@ -9,10 +10,13 @@ const Proyectos = () => {
   };
 
   return (
+    
     <div className={principal}>
-      <h2>Car Rental</h2>
+      
+      <h1>PROJECTS</h1>
+      <h2>Car Rental En Digital House</h2>
       <a href="" onClick={handleClick}>
-        <img src="/images/proyecto.png" alt="Proyecto" />
+        <img src={rental} alt="Proyecto" />
         
       </a>
       

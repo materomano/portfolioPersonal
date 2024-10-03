@@ -1,10 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { LangProvider } from './components/LangContext.jsx';
+import './Estilo/style.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+ReactDOM.render(
+  <LangProvider>
     <App />
-  </React.StrictMode>,
-)
+  </LangProvider>,
+  document.getElementById('root')
+);
+
+

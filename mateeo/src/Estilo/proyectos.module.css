@@ -1,50 +1,65 @@
 .principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    font-size: Helvetica;
-  }
-  .principal h2{
-    font-size: Helvetica;
-  }
-  .principal img {
-    max-width: 70%;
-    height: auto;
-    border-radius: 14px;
-    transition: filter 0.3s ease, opacity 0.3s ease;
-   
-    position: relative;
-  }
-  
-  .principal a {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .principal a::after {
-    content: '\f35d'; 
-    font-family: 'Font Awesome 6 Free'; 
-    font-weight: 999; 
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-image: url("fondo.jpg");
+  position: relative;
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que los elementos se reorganicen si es necesario en pantallas más pequeñas */
 }
+
+h1 {
+  width: 100%; /* Para que el h1 ocupe todo el ancho y esté arriba */
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px; /* Añade espacio debajo del título */
+}
+
+.principal h2 {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  display: flex;
   
-  .principal a:hover img {
-    filter: blur(5px);
-   
-  }
-  
-  .principal a:hover::after {
-    opacity: 1;
-  }
-  
-  
+  margin: 20px; /* Añade espacio entre el h2 y la imagen */
+}
+
+.principal img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 14px;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  margin: 0; /* Elimina márgenes */
+  padding: 0; /* Elimina padding */
+}
+
+.principal a {
+  position: relative;
+  display: inline-block;
+}
+
+.principal a::after {
+  content: "\f35d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 999;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.principal a:hover img {
+  filter: blur(5px);
+}
+
+.principal a:hover::after {
+  opacity: 1;
+}
