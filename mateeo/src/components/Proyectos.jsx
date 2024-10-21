@@ -6,7 +6,7 @@ const Proyectos = () => {
   const handleClick = (event) => {
     event.preventDefault();
     console.log("Imagen clickeada");
-    window.location.href = "http://18.208.133.96:3000/";
+    window.location.href = "http://3.82.145.148:3000/";
   };
 
   return (
