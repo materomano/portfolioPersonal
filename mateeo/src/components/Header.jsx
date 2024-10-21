@@ -75,6 +75,10 @@ const Header = () => {
           />
         </li>
       </ul>
+
+      <div>
+        <img src="/images/luna.png" alt="" />
+      </div>
     </div>
   );
 };
