@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import fotomia from '../assets/images/fotomateo.png';
-import fondo from '../assets/images/fondo.jpg';
+import fotomia from '/images/fotomateo.png';
+import fondo from '/images/fondo.jpg';
 import { principal, main, hidden, show } from '../Estilo/mateo.module.css';
 import { useLang } from '../components/LangContext.jsx';
 

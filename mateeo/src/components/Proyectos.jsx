@@ -1,5 +1,5 @@
 import React from 'react';
-import rental from '../assets/images/rental.jpg'
+import rental from '/images/rental.jpg'
 import { principal } from '../Estilo/proyectos.module.css';
 
 const Proyectos = () => {

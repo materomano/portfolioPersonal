@@ -1,6 +1,6 @@
 import React from "react";
-import diploma from "../assets/images/DIPLOMA.png";
-import certificado from "../assets/images/certificado.png";
+import diploma from "/images/DIPLOMA.png";
+import certificado from "/images/certificado.png";
 
 import { principal, foto, tittle, next  } from "../Estilo/estudios.module.css";
 
