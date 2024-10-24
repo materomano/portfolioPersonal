@@ -1,19 +1,22 @@
 import React from 'react';
-import proyecto from "../assets/images/proyecto.png"
+import rental from '/images/rental.jpg'
 import { principal } from '../Estilo/proyectos.module.css';
 
 const Proyectos = () => {
   const handleClick = (event) => {
     event.preventDefault();
     console.log("Imagen clickeada");
-    window.location.href = "http://18.208.133.96:3000/";
+    window.location.href = "http://3.82.145.148:3000/";
   };
 
   return (
+    
     <div className={principal}>
-      <h2>Car Rental</h2>
+      
+      <h1>PROJECTS</h1>
+      <h2>Car Rental En Digital House</h2>
       <a href="" onClick={handleClick}>
-        <img src={proyecto} alt="Proyecto" />
+        <img src={rental} alt="Proyecto" />
         
       </a>
       

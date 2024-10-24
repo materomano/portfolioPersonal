@@ -5,6 +5,14 @@ import { useLang } from '../components/LangContext'; // Asumiendo que tienes un 
 const Header = () => {
   const { switchLang, lang } = useLang(); // Obtenemos switchLang y lang del contexto
 
+  // Función que maneja el desplazamiento suave
+  const scrollToSection = (id) => {
+    const section = document.querySelector(id); // Buscar el elemento por id
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' }); // Desplazamiento suave
+    }
+  };
+
   // Función para renderizar los <li> dependiendo del idioma
   const renderMenuItems = () => {
     if (lang === 'es') {
@@ -12,16 +20,16 @@ const Header = () => {
       return (
         <>
           <li>
-            <a href="#portada">Inicio</a>
+            <a onClick={() => scrollToSection('#portada')}>Inicio</a>
           </li>
           <li>
-            <a href="#sobre-mi">Sobre Mi</a>
+            <a onClick={() => scrollToSection('#sobre-mi')}>Sobre Mi</a>
           </li>
           <li>
-            <a href="#proyectos">Proyectos</a>
+            <a onClick={() => scrollToSection('#proyectos')}>Proyectos</a>
           </li>
           <li>
-            <a href="#estudios">Estudios</a>
+            <a onClick={() => scrollToSection('#estudios')}>Estudios</a>
           </li>
         </>
       );
@@ -30,16 +38,16 @@ const Header = () => {
       return (
         <>
           <li>
-            <a href="#portada">Home</a>
+            <a onClick={() => scrollToSection('#portada')}>Home</a>
           </li>
           <li>
-            <a href="#sobre-mi">About Me</a>
+            <a onClick={() => scrollToSection('#sobre-mi')}>About Me</a>
           </li>
           <li>
-            <a href="#proyectos">Projects</a>
+            <a onClick={() => scrollToSection('#proyectos')}>Projects</a>
           </li>
           <li>
-            <a href="#estudios">Studies</a>
+            <a onClick={() => scrollToSection('#estudios')}>Studies</a>
           </li>
         </>
       );
@@ -49,7 +57,7 @@ const Header = () => {
   return (
     <div className={encabezado}>
       <ul>
-        {renderMenuItems()} 
+        {renderMenuItems()}
       </ul>
       <ul>
         <li>
@@ -67,6 +75,7 @@ const Header = () => {
           />
         </li>
       </ul>
+
     </div>
   );
 };
